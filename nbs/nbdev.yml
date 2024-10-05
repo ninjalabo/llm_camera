@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "llm_camera"
+  site-url: "https://llm_camera.github.io/llm_camera"
+  description: "example of using vision LLM"
+  repo-branch: main
+  repo-url: "https://github.com/ninjalabo/llm_camera"
