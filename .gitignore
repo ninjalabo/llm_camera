@@ -1,4 +1,6 @@
+_docs/
 .github/
+_proc/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
