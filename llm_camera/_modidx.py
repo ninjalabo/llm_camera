@@ -28,4 +28,7 @@ d = { 'settings': { 'branch': 'main',
                                                  'llm_camera.openai_image_inquiry.openai_inquiry.ask_image': ( 'openai_image_inquiry.html#openai_inquiry.ask_image',
                                                                                                                'llm_camera/openai_image_inquiry.py'),
                                                  'llm_camera.openai_image_inquiry.openai_inquiry.ask_text': ( 'openai_image_inquiry.html#openai_inquiry.ask_text',
-                                                                                                              'llm_camera/openai_image_inquiry.py')}}}
+                                                                                                              'llm_camera/openai_image_inquiry.py')},
+            'llm_camera.utils': { 'llm_camera.utils.check_res': ('utils.html#check_res', 'llm_camera/utils.py'),
+                                  'llm_camera.utils.cleanup': ('utils.html#cleanup', 'llm_camera/utils.py'),
+                                  'llm_camera.utils.res': ('utils.html#res', 'llm_camera/utils.py')}}}
