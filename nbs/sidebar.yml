@@ -2,5 +2,6 @@ website:
   sidebar:
     contents:
       - index.ipynb
-      - ask_openai.ipynb
       - capture_youtube_live.ipynb
+      - demo.ipynb
+      - openai_image_inquiry.ipynb

@@ -22,7 +22,7 @@ def info(response):
 
 # %% ../nbs/openai_image_inquiry.ipynb 9
 class openai_inquiry:
-    def __init__(self, apikey=api_key):
+    def __init__(self):
         self.client = OpenAI()
 
     def ask_text(self, question):
