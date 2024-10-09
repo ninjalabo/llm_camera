@@ -4,31 +4,32 @@
 __all__ = ['res', 'check_res', 'cleanup']
 
 # %% ../nbs/utils.ipynb 1
+import os
+import shutil
 import glob
-
-# %% ../nbs/utils.ipynb 3
+from pathlib import Path
 from PIL import Image
 
-# %% ../nbs/utils.ipynb 5
+# %% ../nbs/utils.ipynb 10
 def res(fname):
+    """return the resolution in a tuple"""
     with Image.open(fname) as img:
         w, h = img.size
         return w, h
 
 def check_res(fname, reso):
+    """check if its resolution is equal to 'reso'"""
     if reso != res(fname):
         return False
     return True
 
-# %% ../nbs/utils.ipynb 8
-def cleanup():
-    for f in glob.glob("../data/*.jpg"):
-        if check_res(f, (1280, 720)) == False:
+# %% ../nbs/utils.ipynb 14
+def cleanup(files, resolution):
+    """Remove files which are not equal to the specified resolution"""
+    for f in files:
+        if Path(f).exists() == False:
+            print(f'{f} doesn\'t exists')
+            continue
+        if check_res(f, resolution) == False:
             print(f, res(f))
             os.remove(f)
-
-# %% ../nbs/utils.ipynb 13
-import os
-
-# %% ../nbs/utils.ipynb 16
-import shutil
